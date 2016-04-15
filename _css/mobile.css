@@ -1,0 +1,274 @@
+*{box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */}
+
+@font-face {
+  font-family: "Interstate Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("2c996610-b694-4382-af3e-b6065674a822-1.ttf");
+}
+
+@font-face {
+  font-family: "Interstate Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("77ea7852-c5e4-4bd8-b870-792be65f801d-1.ttf");
+}
+
+@font-face {
+  font-family: "Interstate";
+  font-style: normal;
+  font-weight: normal;
+  src: url("5e3fc048-6bf6-4b47-b09a-8d0bedcea497-1.ttf");
+  }
+
+body{
+margin:0;
+background:#1F1F1F;
+overflow-x:hidden;
+}
+
+header{
+height:130px;
+position:relative;
+}
+
+header img{
+opacity:0;
+position:absolute;
+height:130px;
+min-width:100%;
+
+margin:0 auto;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -ms-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+}
+
+header .active{
+opacity:1;
+}
+
+
+article{
+padding:10px 10px;
+background: url('../_img/article_bg.png') no-repeat scroll center top #1F1F1F;
+color:white;
+position:relative;
+}
+
+nav{
+width:100%;
+list-style-image:url('../_img/arrow.gif');
+background: #333;
+position:relative;
+z-index:2;
+}
+
+nav li a{
+padding-left:10px;
+display:block;
+width:100%;
+line-height:30px;
+text-decoration:none;
+color:white;
+border-bottom: 1px solid #222;
+box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.05) inset;
+background: linear-gradient(rgba(255, 255, 255, 0.02) 0%, rgba(0, 0, 0, 0.1) 100%) repeat scroll 0% 0% transparent;
+}
+
+nav li a:before{
+content:url('../_img/arrow.gif');
+padding-right:10px;
+}
+
+nav li:last-of-type a{border:0;}
+
+nav .extend div ul{
+margin:0;
+padding:0;
+}
+
+nav .extend div ul li a{
+padding-left:30px;
+display:block;
+width:100%;
+line-height:30px;
+border-bottom: 1px solid #222;
+box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.05) inset;
+background: linear-gradient(rgba(255, 255, 255, 0.02) 0%, rgba(0, 0, 0, 0.1) 100%) repeat scroll 0% 0% transparent;
+}
+
+nav a:active{
+
+background:
+}
+
+.auto img{
+border-radius:10px;
+width:20%;
+height:50px;
+}
+
+.auto table{width:100%;}
+
+.auto table td:first-child{float:left;}
+.auto table td:last-child{float:right;}
+
+
+.login{
+width:80%;
+margin:0 auto;
+}
+
+.login input{
+width:100%;
+padding:10px 5px 10px 5px;
+border:0;
+}
+
+.login input[name="email"]{
+border-radius:5px 5px 0 0;
+}
+
+.login input[name="submit"]{
+border-radius:0 0 5px 5px;
+
+  background-color: hsl(195, 60%, 35%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d95b7", endColorstr="#23748e");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#2d95b7), to(#23748e));
+  background-image: -moz-linear-gradient(top, #2d95b7, #23748e);
+  background-image: -ms-linear-gradient(top, #2d95b7, #23748e);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2d95b7), color-stop(100%, #23748e));
+  background-image: -webkit-linear-gradient(top, #2d95b7, #23748e);
+  background-image: -o-linear-gradient(top, #2d95b7, #23748e);
+  background-image: linear-gradient(#2d95b7, #23748e);
+  border-color: #23748e #23748e hsl(195, 60%, 32.5%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.16);
+  -webkit-font-smoothing: antialiased;
+
+}
+
+.login input[name="submit"]:hover{
+  background-color: hsl(195, 60%, 35%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#23748e", endColorstr="#2d95b7");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#23748e), to(#2d95b7));
+  background-image: -moz-linear-gradient(top, #23748e, #2d95b7);
+  background-image: -ms-linear-gradient(top, #23748e, #2d95b7);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #23748e), color-stop(100%, #2d95b7));
+  background-image: -webkit-linear-gradient(top, #23748e, #2d95b7);
+  background-image: -o-linear-gradient(top, #23748e, #2d95b7);
+  background-image: linear-gradient(#23748e, #2d95b7);
+  border-color: #23748e #23748e hsl(195, 60%, 32.5%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.16);
+  -webkit-font-smoothing: antialiased;
+  }
+  
+.login input[name="submit"]:active{
+background:#2d95b7;
+}
+
+.artikel img{width:100%;}
+
+.artikel .title{
+position:absolute;
+left:0;
+bottom:4px;
+width:100%;
+height:70px;
+background:rgba(0,0,0,0.7);
+color:white;
+padding:5px 10px;
+}
+
+.artikel .title h4{
+margin:0;
+}
+
+.artikel .title span{
+float:right;
+}
+
+
+
+.artikel{
+margin:0 auto;
+width:90%;
+position:relative;
+overflow:hidden;
+}
+
+
+.muteer { 
+		width: 100%; 
+		border-collapse: collapse; 
+		color:black;
+		background:white;
+	}
+	/* Zebra striping */
+	.muteer tr:nth-of-type(odd) { 
+		background: #eee; 
+	}
+	.muteer th { 
+		background: #333; 
+		color: white; 
+		font-weight: bold; 
+	}
+	.muteer td, .muteer th { 
+		padding: 6px; 
+		border: 1px solid #ccc; 
+		text-align: left; 
+	}
+	
+		/* Force table to not be like tables anymore */
+		.muteer table, .muteer thead, .muteer tbody, .muteer th, .muteer td, .muteer tr { 
+			display: block; 
+		}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		.muteer thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		.muteer tr { border: 1px solid #ccc; }
+		
+		.muteer td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 50%; 
+		}
+		
+		.muteer td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+		
+		/*
+		Label the data
+		*/
+		.muteer td:nth-of-type(1):before { content: "Klantnr"; }
+		.muteer td:nth-of-type(2):before { content: "Voornaam"; }
+		.muteer td:nth-of-type(3):before { content: "Achternaam"; }
+		.muteer td:nth-of-type(4):before { content: "Adres"; }
+		.muteer td:nth-of-type(5):before { content: "Postcode"; }
+		.muteer td:nth-of-type(6):before { content: "Woonplaats"; }
+		.muteer td:nth-of-type(7):before { content: "Email"; }
+		.muteer td:nth-of-type(8):before { content: "Admin"; }
+		.muteer td:nth-of-type(9):before { content: "wijzig"; }
+		.muteer td:nth-of-type(10):before { content: "Verwijder"; }
+	

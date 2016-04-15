@@ -1,0 +1,291 @@
+*{box-sizing:border-box;-moz-box-sizing:border-box;}
+
+@font-face {
+  font-family: "Interstate Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("2c996610-b694-4382-af3e-b6065674a822-1.ttf");
+}
+
+@font-face {
+  font-family: "Interstate Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("77ea7852-c5e4-4bd8-b870-792be65f801d-1.ttf");
+}
+
+@font-face {
+  font-family: "Interstate";
+  font-style: normal;
+  font-weight: normal;
+  src: url("5e3fc048-6bf6-4b47-b09a-8d0bedcea497-1.ttf");
+  }
+
+
+body{
+margin:0;
+background:url(../_img/bg.jpg) center center fixed;
+background-size:cover;
+}
+
+header{
+position:relative;
+margin:0 auto;
+width:70%;
+padding:0;
+height:300px;
+max-width:1024px;
+}
+
+header img{
+opacity:0;
+position:absolute;
+min-height:300px;
+min-width:100%;
+margin:0 auto;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -ms-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+}
+
+header .active{
+opacity:1;
+}
+
+header:after{
+position:absolute;
+display:block;
+top:10px;
+left:10px;
+content:"";
+background:url(../_img/text.png) no-repeat;
+height:100%;
+width:100%;
+background-size:auto 60px;
+}
+
+nav{
+width:70%;
+margin:0 auto;
+list-style:none;
+background:black;
+max-width:1024px;
+position:relative;
+z-index:2;
+}
+
+nav li{float:left;}
+
+nav li a{
+display:block;
+padding:0 10px;
+color:#808080;
+font-size: 1.4em;
+text-decoration:none;
+font-family: "Interstate Bold";
+line-height:50px;
+}
+
+nav li a:hover{
+color:white;
+background:#808080;
+}
+
+
+
+article{
+width:70%;
+max-width:1024px ;
+margin:0 auto;
+color:white;
+background: url('../_img/article_bg.png') no-repeat scroll center top #1F1F1F;
+padding:15px;
+font-family: Interstate,arial,helvetica,sans-serif;
+position:relative;
+}
+
+footer{
+width:70%;
+margin:0 auto;
+background:black;
+line-height:50px;
+height:30px;
+max-width:1024px;
+}
+
+.auto{
+width:100%;
+}
+
+.auto img{
+width:200px;
+height:150px;
+border-radius:10px;
+}
+
+
+.auto h1, .auto h2{
+font-family: "Interstate Black",arial,helvetica,sans-serif;
+color:#808080;
+line-height: 1.276em;
+margin-left:50px;
+}
+
+.extend{position:relative;}
+
+.extend div{
+position:absolute;
+left:0;
+top:50px;
+padding:0;
+background:black;
+width:250px;
+z-index:5;
+opacity:0;
+display:none;
+}
+
+.extend div ul{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.extend div ul li{
+display:block;
+width:100%;
+}
+
+.extend div ul li a{line-height:30px;font-size:20px;}
+
+.extend:hover{background:#808080;}
+.extend:hover a{color:white;}
+.extend:hover div{display:block;opacity:1;}
+
+.clear{clear:both;height:0;}
+
+header{ 
+   overflow:hidden;
+	}
+
+header img{height:300px;}
+
+.auto table{
+width:40%;
+margin-right:10%;
+float:left;
+}
+.auto table tr td{padding-right:50px;}
+
+.login{
+width:50%;
+margin:0 auto;
+background:#252525;
+padding:10px 20px;
+}
+
+.login input{
+margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+.login input[name="email"], .login input[name="wachtwoord"]{
+width: 100%;
+margin-bottom: 1em;
+border: 0px none;
+border-radius: 3px;
+height: 2.2em;
+font-size: 1.2em;
+color: #666;
+padding-left: 0.5em;
+}
+
+.login input[name="submit"]{
+background: linear-gradient(#00AADE, #0096C4) repeat scroll 0% 0% transparent;
+border-radius: 3px;
+border: 0px none;
+height: 2em;
+color: #FFF;
+font-family: Georgia,serif;
+font-size: 1.3em;
+font-weight: 700;
+padding: 0px 0.5em;
+cursor: pointer;
+
+}
+
+.login input[name="submit"]:hover{
+ background: linear-gradient(#00BDF7, #00AADE) repeat scroll 0% 0% transparent;
+  }
+  
+.login input[name="submit"]:active{
+position:relative;
+top:1px;
+}
+
+.artikel{
+font-weight: normal;
+color: rgb(85, 85, 85);
+width:100%;
+display: inline-block;
+position:relative;
+overflow:hidden;
+padding-bottom:-4px;
+margin-bottom:-4px;
+}
+
+.artikel .title{
+display:block;
+color:white;
+padding:10px;
+position:absolute;
+top:100%;
+bottom:4px;
+left:0;right:0;
+background:rgba(0,0,0,0.7);
+-webkit-transition: top 0.5s ease-in-out; /* For Safari 3.1 to 6.0 */
+transition: top 0.5s ease-in-out;
+}
+
+.artikel span{
+text-align:right;
+width:100%;
+display:block;
+}
+
+.artikel:hover .title{
+top:0;
+}
+
+.artikelen{
+position:relative;
+-moz-column-count: 5;
+    -webkit-column-count: 4;
+    column-count: 4;
+}
+
+.artikel img{
+width:100%;
+}
+
+.dealer a{color:white;}
+
+.muteer{
+width:100%;
+}
+
+.muteer input[type="text"]{
+width:100%;
+}
+
+
+#lambo{
+display:block;
+position:fixed;
+bottom:-310px;
+left:70%;
+}
